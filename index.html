@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gibby</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    html {
+      font-size: 16px; 
+    }
+
+    body, h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #000;
+      color: #ccc;
+    }
+
+    .sidebar {
+      width: 120px;
+      background: #222;
+      position: fixed;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 15px;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: inherit;
+      padding: 12px 0;
+      text-align: center;
+      width: 100%;
+      font-size: 14px;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #000;
+    }
+
+    .sidebar i {
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+
+    #main {
+      margin-left: 120px;
+      padding: 30px;
+      max-width: 1100px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media only screen and (max-width: 700px) {
+      #main {
+        margin-left: 0;
+      }
+      .sidebar {
+        display: none;
+      }
+      .topnav {
+        display: flex;
+        justify-content: center;
+        background: #000;
+        padding: 8px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+      .topnav a {
+        flex: 1;
+        text-align: center;
+        color: #ccc;
+        text-decoration: none;
+        font-size: 14px;
+      }
+    }
+
+    .header, .section {
+      margin-bottom: 50px;
+    }
+
+    .header h1 {
+      font-size: 36px;
+    }
+
+    .header p {
+      font-size: 18px;
+      margin-top: 8px;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background: #666;
+      width: 180px;
+      margin: 20px 0;
+    }
+
+    .skills div {
+      background: #444;
+      height: 24px;
+      margin-bottom: 10px;
+    }
+
+    .skills div span {
+      display: block;
+      height: 100%;
+      background: #999;
+      text-align: right;
+      padding-right: 10px;
+      color: #000;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .pricing {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .pricing ul {
+      background: #fff;
+      color: #000;
+      list-style: none;
+      padding: 0;
+      flex: 1;
+      min-width: 240px;
+      font-size: 14px;
+    }
+
+    .pricing li {
+      padding: 14px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .pricing li:first-child {
+      background: #333;
+      color: #fff;
+      font-size: 22px;
+    }
+
+    .pricing button {
+      background: #000;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .pricing button:hover {
+      background: #444;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .gallery img {
+      width: 500%;
+      max-width: 300px; 
+      height: auto;
+    }
+
+    .contact-form input, .contact-form button {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 14px;
+      border: none;
+      font-size: 15px;
+    }
+
+    .contact-form button {
+      background: #ccc;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 22px;
+    }
+
+    .footer i {
+      margin: 0 8px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .footer i:hover {
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <nav class="sidebar">
+    <a href="#"><i class="fa fa-home"></i><p>HOME</p></a>
+    <a href="#about"><i class="fa fa-user"></i><p>ABOUT</p></a>
+    <a href="#photos"><i class="fa fa-eye"></i><p>PHOTOS</p></a>
+    <a href="#contact"><i class="fa fa-envelope"></i><p>CONTACT</p></a>
+  </nav>
+
+  
+  <div class="topnav">
+    <a href="#">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#photos">PHOTOS</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+
+
+  <div id="main">
+    <header class="header">
+      <h1>I'm Gideon Anyiine.</h1>
+      <p>Photographer and Web Designer.</p>
+      <img src="download (1).jpeg" alt="Gideon" style="width:992%; max-width:1108px;">
+    </header>
+
+    <section class="section" id="about">
+      <h2>My Name</h2>
+      <hr>
+      <p>I'm a passionate photographer and web designer who loves creating beautiful digital experiences. Whether it's capturing perfect moments through a lens or designing stunning websites, I put my heart into everything I do.</p>
+
+      <h3>My Skills</h3>
+      <div class="skills">
+        <p>Photography</p>
+        <div><span style="width:95%">95%</span></div>
+        <p>Web Design</p>
+        <div><span style="width:85%">85%</span></div>
+        <p>Photoshop</p>
+        <div><span style="width:80%">80%</span></div>
+      </div>
+
+      <div class="section">
+        <div style="display: flex; justify-content: space-around; font-size: 16px;">
+          <div><strong>11+</strong><br>Partners</div>
+          <div><strong>55+</strong><br>Projects Done</div>
+          <div><strong>89+</strong><br>Happy Clients</div>
+          <div><strong>150+</strong><br>Meetings</div>
+        </div>
+      </div>
+
+      <button>Download Resume</button>
+
+      <h3>My Pricing</h3>
+      <div class="pricing">
+        <ul>
+          <li>Basic</li>
+          <li>Web Design</li>
+          <li>Photography</li>
+          <li>5GB Storage</li>
+          <li>Mail Support</li>
+          <li><h2>$10</h2><span>per month</span></li>
+          <li><button>Sign Up</button></li>
+        </ul>
+        <ul>
+          <li>Pro</li>
+          <li>Web Design</li>
+          <li>Photography</li>
+          <li>50GB Storage</li>
+          <li>Endless Support</li>
+          <li><h2>$25</h2><span>per month</span></li>
+          <li><button>Sign Up</button></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="photos">
+      <h2>My Photos</h2>
+      <hr>
+      <div class="gallery">
+        <img src="download (2).jpeg" alt="Photo 1">
+        <img src="download (3).jpeg" alt="Photo 2">
+        <img src="GNX Kendrick Lamar.jpeg" alt="Photo 3">
+        <img src="Kendrick Lamar (1).jpeg" alt="Photo 4">
+        <img src="Kendrick Lamar.jpeg" alt="Photo 5">
+        <img src="Untangling Kendrick Lamar’s Haley Joel Osment Mix-Up on Drake Diss.jpeg" alt="Photo 6">
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact Me</h2>
+      <hr>
+      <div>
+        <p><i class="fa fa-map-marker"></i> Chicago, US</p>
+        <p><i class="fa fa-phone"></i> Phone: +00 151515</p>
+        <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
+      </div>
+
+      <p>Let's get in touch. Send me a message:</p>
+
+      <form action="/action_page.php" target="_blank" class="contact-form">
+        <input type="text" name="Name" placeholder="Name" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <input type="text" name="Subject" placeholder="Subject" required>
+        <input type="text" name="Message" placeholder="Message" required>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <i class="fa fa-facebook-official"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-snapchat"></i>
+      <i class="fa fa-pinterest-p"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-linkedin"></i>
+    </footer>
+
+  </div>
+
+</body>
+</html>
